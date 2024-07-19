@@ -1,0 +1,45 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: monospace;
+}
+
+html{
+  width: 100%;
+}
+
+body{
+  width: 100%;
+  background-color: aliceblue;
+}
+
+a{
+  text-decoration: none;
+}
+
+a:visited{
+  color: currentColor;
+}
+
+#root{
+  width: 100%;
+}
+
+header{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 70px;
+  border: 1px solid black;
+}
+
+.logo{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.headerlogo{
+  height: 60px;
+}
