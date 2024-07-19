@@ -1,13 +1,14 @@
 {
   "files": {
-    "main.css": "/static/css/main.f855e6bc.css",
-    "main.js": "/static/js/main.41f9ca6c.js",
+    "main.css": "/static/css/main.83291595.css",
+    "main.js": "/static/js/main.13bdc09d.js",
+    "static/media/BleakeDevLogo.png": "/static/media/BleakeDevLogo.16f632f251a323a03f31.png",
     "index.html": "/index.html",
-    "main.f855e6bc.css.map": "/static/css/main.f855e6bc.css.map",
-    "main.41f9ca6c.js.map": "/static/js/main.41f9ca6c.js.map"
+    "main.83291595.css.map": "/static/css/main.83291595.css.map",
+    "main.13bdc09d.js.map": "/static/js/main.13bdc09d.js.map"
   },
   "entrypoints": [
-    "static/css/main.f855e6bc.css",
-    "static/js/main.41f9ca6c.js"
+    "static/css/main.83291595.css",
+    "static/js/main.13bdc09d.js"
   ]
 }
