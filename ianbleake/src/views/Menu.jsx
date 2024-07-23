@@ -1,20 +1,26 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
+import Social from '../Components/Social'
+
 
 const Menu = () => {
   return (
-    <div>
-        <ul id="navigation" className='mainmenu'>
-            <li className='mainlink'>
+    <nav className='mainmenu'>
+        <ul className='navcolum' >
+            <li className='navlink'>
                 <Link to="/about">About</Link>
             </li>
-            <li className='mainlink'>
+            <li className='navlink'>
                 <Link to="/contact">Contact</Link>
             </li>
-            <li className='mainlink'>
+            <li className='navlink'>
                 <Link to="/contact">Blog</Link>
             </li>
         </ul>
-    </div>
+        <ul className='rscolum' >
+           <Social linkedin={'#'} github={'#'} instagram={'#'} youtube={'#'} />
+        </ul>
+    </nav>
   )
 }
 
