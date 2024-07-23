@@ -5,23 +5,29 @@
   font-family: monospace;
 }
 
+html{
+  height: 100%;
+  width: 100%;
+}
+
 :root{
-  --bg: #FEF3E2;
+  --white: #ffff;
+  --bg: #E1F7F5;
   --secbg: #BEC6A0;
   --terbg: #606676;
   --cardbg: #D6EFD8;
   --titles: #508D4E;
   --subtls: #80AF81;
   --bord: #1A5319;
-}
+  --primary: #201E43;
+  --secundary: #134B70;
+  --terciary: #508C9B;
 
-html{
-  width: 100%;
 }
 
 body{
-  width: 100%;
-  background-color: var(--bg);
+  background-color: var(--white);
+  padding: 20px;
 }
 
 a{
@@ -32,31 +38,26 @@ a:visited{
   color: currentColor;
 }
 
-#root{
-  width: 100%;
-}
-
-header{
+header {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: flex-start;
   height: 70px;
-  box-shadow: 1px 1px 1px 1px #606676;
-  background-color: var(--titles);
+  background-color: transparent;
   box-shadow: 0 3px 3px #0000001a;
-}
-
-.rs {
-  display: flex;
-  list-style: none;
-  padding-left: 10px;
   align-items: center;
-  gap: 5px;
+  gap: 10px;
 }
 
-.icon{
-  height: 30px;
-  width: 30px;
+
+.App{
+  width: 100%;
+  background-color: var(--bg);
+  box-shadow: 1px 1px 2px 1px #606676;
+}
+
+.section{
+  width: 100%;
 }
 
 .logo{
@@ -70,6 +71,41 @@ header{
   margin: 5px;
 }
 
+.btnmenu{
+ height: 60%;
+ width: 200px;
+ text-align: left;
+ border-left: 2px solid var(--primary);
+ color: var(--secundary);
+ padding-left: 10px;
+ line-height: 40px;
+ font-size: 20px;
+ font-weight: 600;
+ font-family: monospace;
+ cursor: pointer;
+}
+
+.contact{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  margin-left: auto;
+  margin-right: 30px;
+}
+
+.contactlabel{
+  color: #134B70;
+  font-size: 20px;
+}
+
+.contact > svg {
+  height: 40px;
+  width: 40px;
+  fill: aliceblue;
+  stroke: var(--primary);
+}
+
 .mainmenu {
   display: flex;
   flex-direction: row;
@@ -77,9 +113,33 @@ header{
   min-width: 210px;
   align-items: center;
   justify-content: space-evenly;
+  color: #201E43;
 }
 
 .mainlink{
   font-weight: 600;
   font-size: 17px;
+}
+
+.secfooter{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  min-height: 100px;
+}
+
+
+
+.copy{
+  height: 25px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.iconft {
+  height: 80px;
+  width: 80px;
+  margin-left: 10px;
 }
