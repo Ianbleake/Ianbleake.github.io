@@ -25,7 +25,7 @@ const Social = ({linkedin,github,instagram,youtube}) => {
           ></path>
         </svg>
       </a>
-      <div class="tooltip">LinkedIn</div>
+      <div class="tooltip">IvanRangel</div>
     </li>
     <li class="icon-content">
       <a href={github} aria-label="GitHub" data-social="github">
@@ -45,7 +45,7 @@ const Social = ({linkedin,github,instagram,youtube}) => {
           ></path>
         </svg>
       </a>
-      <div class="tooltip">GitHub</div>
+      <div class="tooltip">IanBleake</div>
     </li>
     <li class="icon-content">
       <a
@@ -69,7 +69,7 @@ const Social = ({linkedin,github,instagram,youtube}) => {
           ></path>
         </svg>
       </a>
-      <div class="tooltip">Instagram</div>
+      <div class="tooltip">BleakePhoto</div>
     </li>
     <li class="icon-content">
       <a href={youtube} aria-label="Youtube" data-social="youtube">
@@ -89,7 +89,7 @@ const Social = ({linkedin,github,instagram,youtube}) => {
           ></path>
         </svg>
       </a>
-      <div class="tooltip">Youtube</div>
+      <div class="tooltip">BleakeDev</div>
     </li>
   </ul>
   )

@@ -41,8 +41,8 @@ ul {
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  color: #4d4d4d;
-  background-color: #fff;
+  color: var(--terciary);
+  background-color: var(--bg);
   transition: all 0.3s ease-in-out;
 }
 .example-2 .icon-content a:hover {
@@ -98,3 +98,39 @@ ul {
 }
 
 /*!Social Media */
+
+/**Menu label*/
+
+
+.labelmenu {
+  display: inline-block;
+  transition: opacity 500ms ease, transform 500ms ease;
+}
+
+.labelmenu.hidden {
+  transform:rotateX(360deg);
+}
+
+/**Menu label*/
+
+/**Menu*/
+
+@keyframes showmenu {
+  0%{
+    transform: translateY(-500px);
+  }
+  100%{
+    transform: translateY(0px);
+  }
+}
+
+.mainmenu.visible{
+  overflow: hidden;
+  animation: showmenu 500ms ease;
+}
+
+.mainmenu{
+  animation: showmenu 500ms ease-in-out reverse;
+}
+
+/**Menu*/

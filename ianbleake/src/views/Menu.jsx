@@ -3,18 +3,21 @@ import { Link } from 'react-router-dom'
 import Social from '../Components/Social'
 
 
-const Menu = () => {
+const Menu = ({ handler, menustate }) => {
   return (
-    <nav className='mainmenu'>
+    <nav className={`mainmenu ${menustate ? 'visible' : ''}`} >
         <ul className='navcolum' >
             <li className='navlink'>
-                <Link to="/about">About</Link>
+                <Link to="/" onClick={handler} >Home</Link>
             </li>
             <li className='navlink'>
-                <Link to="/contact">Contact</Link>
+                <Link to="/about" onClick={handler} >About</Link>
             </li>
             <li className='navlink'>
-                <Link to="/contact">Blog</Link>
+                <Link to="/contact" onClick={handler} >Contact</Link>
+            </li>
+            <li className='navlink'>
+                <Link to="/contact" onClick={handler} >Blog</Link>
             </li>
         </ul>
         <ul className='rscolum' >

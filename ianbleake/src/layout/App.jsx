@@ -14,21 +14,22 @@ function App() {
   const [menu, setMenu] = useState(false);
   
   const handleMenu = () => {
-    setMenu(!menu)
-    console.log('El estado del menu es: ',menu)
+      setMenu(!menu)
   }
 
   return (
     <div className="App">
       <Header handler={handleMenu} menustate={menu} />
+      <div className='BodyApp'>
       {
-        menu ? <Menu /> : 
+        menu ? <Menu handler={handleMenu} menustate={menu} /> : 
         <Routes>
           <Route path="/" element={<Home />}/>
           <Route path="/about" element={<About />}/>
           <Route path="/contact" element={<Contact />}/>
         </Routes>
       }
+      </div>
       <Footer/>
     </div>
   );
