@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Logo from '../Assets/mainowl.svg';
-import { TbMessageCircle } from "react-icons/tb";
+import { SlEnvolope } from "react-icons/sl";
 import ButtonLabel from '../Components/ButtonLabel';
 
 const Header = ({ handler, menustate }) => {
@@ -15,9 +15,8 @@ const Header = ({ handler, menustate }) => {
       <button className='btnmenu' onClick={handler}>
         <ButtonLabel label={menustate ? 'Close' : 'Menu'} isVisible={!menustate} />
       </button>
-      <Link to='' className='contact'>
-        <TbMessageCircle />
-        <h1 className='contactlabel'>Contact</h1>
+      <Link to='' className='contact'>      
+        <SlEnvolope />
       </Link>
     </header>
   );

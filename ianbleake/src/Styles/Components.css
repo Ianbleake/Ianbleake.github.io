@@ -130,7 +130,7 @@ ul {
 }
 
 .mainmenu{
-  animation: showmenu 500ms ease-in-out reverse;
+  animation: showmenu 500ms ease reverse;
 }
 
 /**Menu*/

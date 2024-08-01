@@ -7,6 +7,8 @@ import Contact from '../views/Contact'
 import Header from '../views/Header';
 import Footer from '../views/Footer'
 import Menu from '../views/Menu';
+import Work from '../views/Work'
+import Blog from '../views/Blog'
 import { useState } from 'react';
 
 function App() {
@@ -14,7 +16,7 @@ function App() {
   const [menu, setMenu] = useState(false);
   
   const handleMenu = () => {
-      setMenu(!menu)
+        setMenu(!menu)
   }
 
   return (
@@ -25,8 +27,10 @@ function App() {
         menu ? <Menu handler={handleMenu} menustate={menu} /> : 
         <Routes>
           <Route path="/" element={<Home />}/>
-          <Route path="/about" element={<About />}/>
-          <Route path="/contact" element={<Contact />}/>
+          <Route path="/MyWork" element={<Work/>} />
+          <Route path="/About" element={<About />}/>
+          <Route path="/Contact" element={<Contact />}/>
+          <Route path="/Blog" element={<Blog/>} />
         </Routes>
       }
       </div>

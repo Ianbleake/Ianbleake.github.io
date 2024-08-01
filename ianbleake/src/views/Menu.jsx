@@ -8,16 +8,16 @@ const Menu = ({ handler, menustate }) => {
     <nav className={`mainmenu ${menustate ? 'visible' : ''}`} >
         <ul className='navcolum' >
             <li className='navlink'>
-                <Link to="/" onClick={handler} >Home</Link>
+                <Link to="/MyWork" onClick={handler} >Work</Link>
             </li>
             <li className='navlink'>
-                <Link to="/about" onClick={handler} >About</Link>
+                <Link to="/About" onClick={handler} >About</Link>
             </li>
             <li className='navlink'>
-                <Link to="/contact" onClick={handler} >Contact</Link>
+                <Link to="/Contact" onClick={handler} >Contact</Link>
             </li>
             <li className='navlink'>
-                <Link to="/contact" onClick={handler} >Blog</Link>
+                <Link to="/Blog" onClick={handler} >Blog</Link>
             </li>
         </ul>
         <ul className='rscolum' >
