@@ -10,6 +10,7 @@ import Menu from '../views/Menu';
 import Work from '../views/Work'
 import Blog from '../views/Blog'
 import { useState } from 'react';
+import Test from '../views/Test';
 
 function App() {
 
@@ -27,6 +28,7 @@ function App() {
         menu ? <Menu handler={handleMenu} menustate={menu} /> : 
         <Routes>
           <Route path="/" element={<Home />}/>
+          <Route path="/Test" element={<Test/>}/>
           <Route path="/MyWork" element={<Work/>} />
           <Route path="/About" element={<About />}/>
           <Route path="/Contact" element={<Contact />}/>

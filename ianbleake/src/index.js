@@ -2,7 +2,6 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter } from 'react-router-dom';
 import './Styles/index.css';
-import 'animate.css';
 import App from './layout/App';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

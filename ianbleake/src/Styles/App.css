@@ -41,7 +41,7 @@ a:visited{
 header {
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
+  justify-content: space-between;
   height: 70px;
   background-color: transparent;
   box-shadow: 0 3px 3px #0000001a;
@@ -65,6 +65,12 @@ header {
   height: 65vh;
   width: 100%;
   overflow-y: scroll;
+}
+
+.HeaderWrap {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 .logo{
@@ -96,11 +102,7 @@ header {
  letter-spacing: 3px;
 }
 
-.contact{
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 10px;
+.IconHeader{
   margin-left: auto;
   margin-right: 30px;
 }
@@ -110,7 +112,7 @@ header {
   font-size: 20px;
 }
 
-.contact > svg {
+.IconHeader > svg {
   height: 40px;
   width: 40px;
   stroke: var(--primary);
@@ -207,6 +209,26 @@ header {
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
+}
+
+.Block.Middle{
+  width: 50%;
+}
+
+.Block.Full{
+  width: 100%;
+}
+
+.Block.Small{
+  width: 40%;
+}
+
+.Block.Slider{
+  width: 60%;
+}
+
+.Block.End{
+  align-items: flex-end;
 }
 
 .InfoText{
