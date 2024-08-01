@@ -21,7 +21,7 @@ const Menu = ({ handler, menustate }) => {
             </li>
         </ul>
         <ul className='rscolum' >
-           <Social linkedin={'#'} github={'#'} instagram={'#'} youtube={'#'} />
+           <Social linkedin={'#'} github={'https://github.com/Ianbleake'} instagram={'#'} youtube={'#'} />
         </ul>
     </nav>
   )

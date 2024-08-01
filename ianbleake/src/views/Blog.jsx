@@ -1,8 +1,14 @@
 import React from 'react'
+import MainTitle from '../Components/MainTitle'
 
 const Blog = () => {
   return (
-    <div>Blog</div>
+    <section className='Section' >
+        <div className='Block' >
+        <MainTitle text={'Blog'} border={'Bottom'} />
+        </div>
+        <div className='Block' ></div>
+    </section>
   )
 }
 

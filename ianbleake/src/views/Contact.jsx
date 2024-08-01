@@ -1,8 +1,14 @@
 import React from 'react'
+import MainTitle from '../Components/MainTitle'
 
 const Contact = () => {
   return (
-    <div>Contact</div>
+    <section className='Section' >
+        <div className='Block' >
+        <MainTitle text={'Contact'} border={'Bottom'} />
+        </div>
+        <div className='Block' ></div>
+    </section>
   )
 }
 

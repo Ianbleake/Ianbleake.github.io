@@ -15,7 +15,7 @@ const Header = ({ handler, menustate }) => {
       <button className='btnmenu' onClick={handler}>
         <ButtonLabel label={menustate ? 'Close' : 'Menu'} isVisible={!menustate} />
       </button>
-      <Link to='' className='contact'>      
+      <Link to="mailto:ang.ivan.ran@gmail.com?cc=arviluki@gmail.com&subject=Hi%20I'm%20..%20and%20..." className='contact'>      
         <SlEnvolope />
       </Link>
     </header>

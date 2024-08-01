@@ -1,12 +1,15 @@
-import React from 'react';
+import React from 'react'
+import MainTitle from '../Components/MainTitle'
 
-class Home extends React.Component {
-    render() {
-        return (
-            <div className='section' >Home</div>
-        );
-    }
-
+const Home = () => {
+  return (
+    <section className='Section' >
+        <div className='Block' >
+        <MainTitle text={'Home'} border={'bottom'}/>
+        </div>
+        <div className='Block' ></div>
+    </section>
+  )
 }
 
-export default Home;
+export default Home

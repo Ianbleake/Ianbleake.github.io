@@ -12,7 +12,7 @@ const Footer = () => {
         <div className='colfooter' >
           <Link to="/" >
               <div className='logo'>
-              <img src={Logo} className='headerlogo' />
+              <img src={Logo} alt="" className='headerlogo' />
                   <h1 className='logotitle' >BleakeDev</h1>
               </div>
           </Link>

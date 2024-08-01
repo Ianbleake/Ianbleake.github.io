@@ -28,7 +28,7 @@ const Social = ({linkedin,github,instagram,youtube}) => {
       <div class="tooltip">IvanRangel</div>
     </li>
     <li class="icon-content">
-      <a href={github} aria-label="GitHub" data-social="github">
+      <a href={github} target="_blank" rel="noopener noreferrer" aria-label="GitHub" data-social="github">
         <div class="filled"></div>
         <svg
           xmlns="http://www.w3.org/2000/svg"

@@ -53,18 +53,18 @@ header {
 
 .App{
   width: 100%;
-  height: 730px;
+  height: 93vh;
+  max-height: 95vh;
   background-color: var(--bg);
   box-shadow: 1px 1px 2px 1px #606676;
-  overflow: hidden;
   transition: opacity 500ms ease, transform 500ms ease;
+  overflow: hidden;
 }
 
 .BodyApp{
-  
-  height: 520px;
+  height: 65vh;
   width: 100%;
-  overflow: hidden;
+  overflow-y: scroll;
 }
 
 .logo{
@@ -149,6 +149,7 @@ header {
   font-size: 30px;
   line-height: 60px;
   letter-spacing: 3px;
+  width: 40%;
 }
 
 .navlink:hover{
@@ -160,6 +161,12 @@ header {
 .navlink:active{
   transition: 100ms;
   transform: translateX(-15px);
+}
+
+.navlink > a {
+  display: block;
+  height: 100%;
+  width: 100%;
 }
 
 .secfooter{
@@ -181,4 +188,45 @@ header {
   height: 80px;
   width: 80px;
   margin-left: 10px;
+}
+
+.Section {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100vh;
+  margin: auto;
+  margin-top: 10px;
+  transition: 100ms;
+  gap: 10vh;
+}
+
+.Block {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.InfoText{
+  text-align: justify;
+  font-size: large;
+}
+
+.ImagePanel{
+  height: 80%;
+  width: 100%;
+  background-color: var(--terciary);
+  margin-top: auto;
+}
+
+.ImagePanel.Circle{
+  border-radius: 100%;
+}
+
+.stripes {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 22.93 22.93'%3E%3Cpolygon fill='%23aadcec' points='0 8.18 14.75 22.93 22.74 22.93 0 0.19 0 8.18'/%3E%3Cpolygon fill='%23aadcec' points='22.93 8.37 22.93 0.38 22.56 0 14.56 0 22.93 8.37'/%3E%3C/svg%3E");
+  background-size: 19px;
+  opacity: .6;
 }

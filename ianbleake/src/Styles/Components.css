@@ -134,3 +134,35 @@ ul {
 }
 
 /**Menu*/
+
+/**Main Title*/
+
+.MainTitle{
+  min-width: 50%;
+  width: auto;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 60px;
+  letter-spacing: 3px;
+  color: var(--secundary);
+  margin: 20px;
+  padding: 0px 20px;
+}
+
+.MainTitle.Top{
+  border-top: 3px solid var(--terciary);
+}
+
+.MainTitle.Bottom{
+  border-bottom: 3px solid var(--terciary);
+}
+
+.MainTitle.Right{
+  border-right: 3px solid var(--terciary);
+}
+
+.MainTitle.Left{
+  border-left: 3px solid var(--terciary);
+}
+
+/**Main Title*/
