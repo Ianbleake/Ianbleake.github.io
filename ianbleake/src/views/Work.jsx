@@ -2,12 +2,34 @@ import React from 'react'
 import MainTitle from '../Components/MainTitle'
 import ImagePanel from '../Components/ImagePanel'
 import Slider from '../Components/Slider'
+import Notes from '../Assets/lapiz.png'
+import Phone from '../Assets/Phonebook.png'
+import Cart from '../Assets/Carrito.png'
 
 const Work = () => {
 
-  const OPTIONS = { loop: true, delay: 1000 }
-  const SLIDE_COUNT = 5
-  const SLIDES = Array.from(Array(SLIDE_COUNT).keys())
+  const OPTIONS = { loop: true, delay: 500 }
+  const SLIDESFRONT = [
+    {
+      id: 1,
+      name: 'Notes',
+      icono: Notes,
+      ruta: 'https://ianbleake.github.io/Notes/'
+    },
+    {
+      id: 2,
+      name: 'Phonebook',
+      icono: Phone,
+      ruta: 'https://ianbleake.github.io/PhoneBook/'
+    },
+    {
+      id: 3,
+      name: 'SimuShop',
+      icono: Cart,
+      ruta: '/'
+    }
+  ]
+  
 
   return (
     <section className='Section' >
@@ -41,7 +63,7 @@ const Work = () => {
             <MainTitle text={'Front-End'} border={'Right'} />
           </div>
           <div className='Block' >
-            <Slider slides={SLIDES} options={OPTIONS} />
+            <Slider slides={SLIDESFRONT} options={OPTIONS} />
           </div>
         </div>
 
@@ -50,7 +72,7 @@ const Work = () => {
             <MainTitle text={'Back-End'} border={'Right'} /> 
           </div>
           <div className='Block' >
-            <Slider slides={SLIDES} options={OPTIONS} />
+            <Slider slides={SLIDESFRONT} options={OPTIONS} />
           </div>
         </div>
 
@@ -59,7 +81,7 @@ const Work = () => {
             <MainTitle text={'Mobile Apps'} border={'Right'} />
           </div>
           <div className='Block' >
-            <Slider slides={SLIDES} options={OPTIONS} />
+            <Slider slides={SLIDESFRONT} options={OPTIONS} />
           </div>
         </div>
 
