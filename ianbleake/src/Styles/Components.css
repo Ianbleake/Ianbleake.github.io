@@ -135,9 +135,9 @@ ul {
 
 /**Menu*/
 
-/**Main Title*/
+/**Titles*/
 
-.MainTitle{
+.subTitle,.MainTitle{
   min-width: 50%;
   width: auto;
   font-weight: 600;
@@ -169,7 +169,15 @@ ul {
   margin: 0px;
 }
 
-/**Main Title*/
+.subTitle{
+  font-weight: 600;
+  font-size: 25px;
+  margin: 0px;
+  padding: 0px;
+  text-align: center;
+}
+
+/**Titles*/
 
 /**Slider*/
 .slider {
