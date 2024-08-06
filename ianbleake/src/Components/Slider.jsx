@@ -1,7 +1,6 @@
 import React from 'react'
 import Autoplay from 'embla-carousel-autoplay'
 import useEmblaCarousel from 'embla-carousel-react'
-import { Link } from 'react-router-dom'
 
 const Slider = ({ slides, options }) => {
   const [emblaRef] = useEmblaCarousel(options, [Autoplay()])
@@ -13,9 +12,9 @@ const Slider = ({ slides, options }) => {
           {slides.map((slide) => (
             <div className="slide" key={slide.id}>
               <div className="slideCont">
-                <Link to={slide.ruta} >
+                <a href={slide.ruta} target='_blank' rel='noreferrer' >
                   <img src={slide.icono} alt={slide.name} />
-                </Link>
+                </a>
               </div> 
             </div>
           ))}
