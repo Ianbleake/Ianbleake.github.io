@@ -26,7 +26,7 @@ const Work = () => {
       id: 3,
       name: 'SimuShop',
       icono: Cart,
-      ruta: '/'
+      ruta: 'https://ianbleake.github.io/BleakeStore/'
     }
   ]
   
